@@ -1,12 +1,31 @@
 import './App.css'
+import Controlled from './components/Controlled'
+import Uncontrolled from './components/Uncontrolled'
 
 function App() {
   return (
     <>
       <h1>Controlled & Uncontrolled Components</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ullam reprehenderit, sequi blanditiis autem voluptatem? Laboriosam dolore incidunt suscipit, id voluptatem at doloremque atque doloribus facilis consequatur ipsa autem ducimus.</p>
+      <hr/>
+      <Controlled />
+      <hr/>
+      <Uncontrolled />
     </>
   )
 }
 
 export default App
+
+/*
+  # Form Handling:
+    - Controlled Component ***:
+      - Sync the form element data with react state whenever the form data updates
+      - "React state becomes the single source of truth"
+      - Steps:
+        1. Create state for each form element, assign state to value prop
+          - value={state}
+        2. Update state (using stateHandler) whenever form data updates
+          - eventHandler (onInput/onChange) -> stateHandler
+
+    - Uncontrolled Component
+*/

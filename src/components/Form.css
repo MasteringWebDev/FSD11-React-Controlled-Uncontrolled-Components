@@ -1,0 +1,14 @@
+div.form-div {
+  margin: 10px 0;
+}
+
+input, button {
+  font-size: 1.5em;
+}
+
+button {
+  background-color: darkolivegreen;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
