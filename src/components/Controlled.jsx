@@ -6,6 +6,11 @@ function Controlled(props) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
+  function handleFormData() {
+    console.log('Form submitted')
+    console.log(name, email, password)
+  }
+
   return (
     <div>
       <h2>Controlled Components</h2>
@@ -34,7 +39,7 @@ function Controlled(props) {
             onInput={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type='button'>Login</button>
+        <button type='button' onClick={handleFormData}>Login</button>
       </form>
     </div>
   );
