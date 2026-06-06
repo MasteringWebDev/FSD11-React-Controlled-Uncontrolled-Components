@@ -28,4 +28,10 @@ export default App
           - eventHandler (onInput/onChange) -> stateHandler
 
     - Uncontrolled Component
+      - Form element data is managed by the DOM itself
+      - React fetches the value only when needed
+      - Steps:
+        1. Create a reference using useRef()
+        2. Connect the reference using the 'ref' prop
+        3. Access the value whenever required
 */
